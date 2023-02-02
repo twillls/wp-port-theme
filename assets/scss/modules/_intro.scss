@@ -1,0 +1,25 @@
+// Intro
+.intro {
+	display: flex;
+	margin-top: $xl-space !important;
+	padding-top: $xl-space;
+	position: relative;
+	
+	&::before {
+		content: 'Hello';
+		font-family: Playfair Display;
+		font-weight: 900;
+		font-style: italic;
+		font-size: 400px;
+		position: absolute;
+		opacity: 20%;
+		left: -20vw;
+		top: -50%;
+	}
+	
+	.intro-container {
+		border: 3px solid $dark-brown;
+		padding: $section-space;
+		text-align: center;
+	}
+}

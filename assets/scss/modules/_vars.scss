@@ -1,0 +1,25 @@
+$xl-space: 150px;
+$section-space: 90px;
+
+$dark-brown: #4d473e;
+$light-brown: #f8ebd5;
+
+@font-face {
+    font-family: "JetBrains";
+    src: url("./fonts/JetBrainsMono-VariableFont_wght.ttf") format('ttf');
+}
+
+$primary-font: JetBrains, monospace;
+$heading-font: Playfair Display, serif;
+
+h1, h2,  h3, h4, h5, h6 {
+    @include primaryTitle;
+}
+
+body {
+    background-color: $light-brown;
+}
+
+body, p, span, a, label, input, button {
+    @include baseFont;
+}

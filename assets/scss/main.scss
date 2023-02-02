@@ -1,0 +1,17 @@
+//Mixins
+@import 'modules/_mixins.scss';
+
+//Variables
+@import 'modules/_vars.scss';
+
+//Components
+@import 'modules/_form.scss';
+@import 'modules/_header.scss';
+@import 'modules/_intro.scss';
+@import 'modules/_projects.scss';
+@import 'modules/_social-nav.scss';
+
+body {
+    font-family: $primary-font;
+    font-weight: 300;
+}

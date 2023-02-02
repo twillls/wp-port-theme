@@ -1,0 +1,14 @@
+@mixin primaryTitle {
+	font-size: 112px !important;
+	font-family: $heading-font !important;
+	font-weight: 900 !important;
+	font-style: italic;
+	color: $dark-brown;
+}
+
+@mixin baseFont {
+	font-size: 16px;
+	font-family: $primary-font !important;
+	font-weight: 300 !important;
+	color: $dark-brown !important;
+}

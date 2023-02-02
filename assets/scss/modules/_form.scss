@@ -1,0 +1,8 @@
+// Form
+.wpforms-container {
+	.wpforms-title {
+		@include primaryTitle;
+		line-height: 1;
+		max-width: 11ch;
+	}
+}
