@@ -1,0 +1,9 @@
+.footer {
+    padding-bottom: $section-space;
+    
+    .list-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

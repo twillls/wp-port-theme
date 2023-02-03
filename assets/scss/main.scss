@@ -1,17 +1,24 @@
 //Mixins
-@import 'modules/_mixins.scss';
+@import 'modules/mixins';
 
 //Variables
-@import 'modules/_vars.scss';
+@import 'modules/vars';
 
 //Components
-@import 'modules/_form.scss';
-@import 'modules/_header.scss';
-@import 'modules/_intro.scss';
-@import 'modules/_projects.scss';
-@import 'modules/_social-nav.scss';
+@import 'modules/form';
+@import 'modules/header';
+@import 'modules/intro';
+@import 'modules/projects';
+@import 'modules/social-nav';
+@import 'modules/footer';
 
 body {
     font-family: $primary-font;
     font-weight: 300;
+}
+
+.container-fluid {
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
 }

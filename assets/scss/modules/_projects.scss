@@ -1,0 +1,93 @@
+.projects-container {
+    margin: $xl-space 0;
+
+    .col {
+        position: relative;
+        height: fit-content;
+
+        .project-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/placeholder.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .overlay {
+                width: 100%;
+                height: 100%;
+                opacity: 80%;
+            }
+        }
+        
+
+        .project-link-wrapper {
+            position: relative;
+
+            .project-link {
+                height: 100%;
+                width: 100%;
+                padding: 96px;
+                display: block;
+                text-align: center;
+            }
+
+            .title {
+                font-family: $heading-font !important;
+                font-size: 24px;
+                font-weight: 900 !important;
+                font-style: italic;
+                color: $dark-brown;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .first-row {
+        .col:nth-child(odd) {
+            .project-image {
+                .overlay {
+                    background-color: $light-brown;
+                }
+            }
+        }
+
+        .col:nth-child(even) {
+            .project-image {
+                .overlay {
+                    background-color: $dark-brown;
+                }
+            }
+
+            .project-link,
+            .title {
+                color: $light-brown !important;
+            }
+        }
+    }
+
+    .second-row {
+        .col:nth-child(odd) {
+            .project-image {
+                .overlay {
+                    background-color: $dark-brown;
+                }
+            }
+
+            .project-link,
+            .title {
+                color: $light-brown !important;
+            }
+        }
+
+        .col:nth-child(even) {
+            .project-image {
+                .overlay {
+                    background-color: $light-brown;
+                }
+            }
+        }
+    }
+}

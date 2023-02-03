@@ -1,6 +1,7 @@
 .page-title {
 	display: flex;
 	flex-direction: column;
+	padding-top: $section-space;
 	
 	.title {
 		@include primaryTitle;
@@ -24,11 +25,6 @@
 	}
 	
 	.contact-button {
-		width: fit-content;
-		padding: 40px;
-		font-size: 24px;
-		color: $light-brown;
-		text-decoration: none;
-		background-color: $dark-brown;
+		@include button();
 	}
 }

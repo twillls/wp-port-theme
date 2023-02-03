@@ -2,8 +2,9 @@
 .intro {
 	display: flex;
 	margin-top: $xl-space !important;
-	padding-top: $xl-space;
+	padding: $section-space 0;
 	position: relative;
+	max-width: 800px;
 	
 	&::before {
 		content: 'Hello';
@@ -15,11 +16,16 @@
 		opacity: 20%;
 		left: -20vw;
 		top: -50%;
+		z-index: -1;
 	}
 	
 	.intro-container {
 		border: 3px solid $dark-brown;
 		padding: $section-space;
 		text-align: center;
+	}
+
+	.intro-paragraph {
+		margin-bottom: 0;
 	}
 }

@@ -1,5 +1,5 @@
 @mixin primaryTitle {
-	font-size: 112px !important;
+	font-size: 96px !important;
 	font-family: $heading-font !important;
 	font-weight: 900 !important;
 	font-style: italic;
@@ -9,6 +9,35 @@
 @mixin baseFont {
 	font-size: 16px;
 	font-family: $primary-font !important;
-	font-weight: 300 !important;
-	color: $dark-brown !important;
+	font-weight: 300;
+	color: $dark-brown;
+}
+
+@mixin button {
+	width: fit-content;
+	padding: 20px 25px;
+	font-size: 18px;
+	color: $light-brown;
+	text-decoration: none;
+	background-color: $dark-brown;
+	border: 1px solid $dark-brown;
+
+	&:hover,
+	&:focus {
+		color: $dark-brown;
+		background-color: $light-brown;
+	}
+}
+
+@mixin formButton {
+	@include button();
+
+	&:hover,
+	&:focus {
+		border: 1px solid $dark-brown;
+	}
+}
+
+@mixin scaleUp {
+	transform: scale(1.5);
 }

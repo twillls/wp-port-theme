@@ -15,7 +15,7 @@
 
 </head> 
 
-<body class="container-xl">
+<body class="container-fluid">
     
     <header class="header">	    
 	   
@@ -26,18 +26,18 @@
 			</button>
 
 			<div id="navigation" class="collapse navbar-collapse flex-column" >		
-            <ul class="social-list list-inline py-3 mx-auto">
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/taylor-dronfield-46b085b2/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                <li class="list-inline-item"><a href="https://github.com/twillls"><i class="fab fa-github-alt fa-fw"></i></a></li>
-                <li class="list-inline-item"><a href="https://codepen.io/taylorwills"><i class="fab fa-codepen fa-fw"></i></a></li>
+            <ul class="social-list list-group">
+                <li class="list-item list-group-item"><a target="_blank" href="https://www.linkedin.com/in/taylor-dronfield-46b085b2/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                <li class="list-item list-group-item"><a target="_blank" href="https://github.com/twillls"><i class="fab fa-github-alt fa-fw"></i></a></li>
+                <li class="list-item list-group-item"><a target="_blank" href="https://codepen.io/taylorwills"><i class="fab fa-codepen fa-fw"></i></a></li>
             </ul>
 
 			</div>
 		</nav>
     </header>
     <div class="main-wrapper">
-	    <header class="page-title py-5">
+	    <header class="page-title container-lg">
 			<h1 class="heading"><?php the_title(); ?></h1>
-            <span class="subtext py-5">Frontend Developer</span>
-	        <a href="#wpforms-16" class="contact-button">Get In Touch</a>
+            <span class="subtext">Frontend Developer</span>
+	        <a role="button" href="#wpforms-16" class="contact-button">Get In Touch</a>
 		</header>

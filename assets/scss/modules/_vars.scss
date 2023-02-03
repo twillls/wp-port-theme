@@ -1,19 +1,30 @@
 $xl-space: 150px;
-$section-space: 90px;
+$section-space: 96px;
 
 $dark-brown: #4d473e;
 $light-brown: #f8ebd5;
 
 @font-face {
     font-family: "JetBrains";
-    src: url("./fonts/JetBrainsMono-VariableFont_wght.ttf") format('ttf');
+    src: url("./fonts/JetBrainsMono-Light.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "JetBrains Medium";
+    src: url("./fonts/JetBrainsMono-Medium.ttf") format('ttf');
 }
 
 $primary-font: JetBrains, monospace;
+$primary-bold: JetBrains Medium, monospace;
 $heading-font: Playfair Display, serif;
 
 h1, h2,  h3, h4, h5, h6 {
     @include primaryTitle;
+}
+
+strong {
+    font-family: JetBrains Medium, monospace;
+    font-weight: 600;
 }
 
 body {
@@ -22,4 +33,8 @@ body {
 
 body, p, span, a, label, input, button {
     @include baseFont;
+}
+
+a:hover {
+    color: $dark-brown;
 }

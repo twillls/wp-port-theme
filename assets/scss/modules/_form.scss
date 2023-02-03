@@ -1,8 +1,42 @@
 // Form
-.wpforms-container {
-	.wpforms-title {
-		@include primaryTitle;
-		line-height: 1;
-		max-width: 11ch;
+div.wpforms-container-full {
+	.wpforms-form {
+		.wpforms-title {
+			@include primaryTitle;
+			margin-bottom: 48px;
+			line-height: 1;
+			max-width: 11ch;
+		}
+
+		.wpforms-field-container {
+			.wpforms-field {
+				position: relative;
+				padding: 20px 0;
+			}
+
+			.wpforms-field-label {
+				position: absolute;
+				bottom: -20px;
+			}
+
+			input[type=text],
+			input[type=email],
+			textarea {
+				background-color: unset;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-color: $dark-brown;
+				border-radius: 0;
+			}
+		}
+
+		.wpforms-submit-container {
+			margin-top: 24px;
+
+			button[type=submit] {
+				@include formButton();
+			}
+		}
 	}
 }
