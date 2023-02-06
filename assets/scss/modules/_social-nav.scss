@@ -40,6 +40,10 @@
 }
 
 .social-list {
+    a {
+        color: $dark-brown !important;
+    }
+
     .list-group-item {
         border: none;
         border-radius: 0;
