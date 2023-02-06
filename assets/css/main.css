@@ -281,6 +281,15 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
   .projects-container .second-row .col:nth-child(even) .project-image .overlay {
     background-color: #f8ebd5;
   }
+  .projects-container .second-row .col:nth-child(even) .project-link,
+  .projects-container .second-row .col:nth-child(even) .title {
+    color: #4d473e;
+  }
+  .projects-container .second-row .col:nth-child(even) .project-link:hover, .projects-container .second-row .col:nth-child(even) .project-link:focus,
+  .projects-container .second-row .col:nth-child(even) .title:hover,
+  .projects-container .second-row .col:nth-child(even) .title:focus {
+    color: #4d473e;
+  }
 }
 
 .header {

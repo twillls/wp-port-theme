@@ -147,6 +147,16 @@
                         background-color: $light-brown;
                     }
                 }
+
+                .project-link,
+                .title {
+                    color: $dark-brown;
+
+                    &:hover,
+                    &:focus {
+                        color: $dark-brown;
+                    }
+                }
             }
         }
     }
