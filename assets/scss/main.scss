@@ -22,3 +22,30 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
+// Set Global Variables
+h1, h2,  h3, h4, h5, h6 {
+    @include primaryTitle;
+}
+
+strong {
+    font-family: JetBrains Medium, monospace;
+    font-weight: 600;
+}
+
+body {
+    background-color: $light-brown;
+}
+
+body, p, span, a, label, input, button {
+    @include baseFont;
+}
+
+a {
+    color: $dark-brown !important;
+
+    &:hover,
+    &:focus {
+        color: $dark-brown !important;
+    }
+}
