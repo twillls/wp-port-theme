@@ -1,9 +1,13 @@
 @mixin primaryTitle {
-	font-size: 96px !important;
+	font-size: 48px !important;
 	font-family: $heading-font !important;
 	font-weight: 900 !important;
 	font-style: italic;
 	color: $dark-brown;
+
+	@media (min-width: $medium) {
+		font-size: 96px !important;
+	}
 }
 
 @mixin baseFont {

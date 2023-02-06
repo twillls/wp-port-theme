@@ -1,7 +1,11 @@
 .page-title {
 	display: flex;
 	flex-direction: column;
-	padding-top: $section-space;
+	padding-top: $section-space-mobile;
+	
+	@media (min-width: $medium) {
+		padding-top: $section-space;
+	}
 	
 	.title {
 		@include primaryTitle;
@@ -10,9 +14,15 @@
 	.subtext {
 		position: relative;
 		width: 100%;
-		padding-bottom: $section-space;
-		margin-bottom: $section-space;
-		font-size: 48px;
+		padding-bottom: $section-space-mobile;
+		margin-bottom: $section-space-mobile;
+		font-size: 24px;
+
+		@media (min-width: $medium) {
+			font-size: 48px;
+			padding-bottom: $section-space;
+			margin-bottom: $section-space;
+		}
 
 		&::after {
 			position: absolute;

@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Site Template">
-    <meta name="author" content="https://youtube.com/FollowAndrew">    
-    <link rel="shortcut icon" href="images/logo.png"> 
+    <meta name="description" content="Taylor Wills' Portfolio"> 
     
     <?php
     wp_head();
@@ -22,7 +20,7 @@
 	    <nav class="navbar navbar-expand-lg">
            
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-share" aria-hidden="true"></i>
+                <i class="fa fa-link" aria-hidden="true"></i>
 			</button>
 
 			<div id="navigation" class="collapse navbar-collapse flex-column" >		

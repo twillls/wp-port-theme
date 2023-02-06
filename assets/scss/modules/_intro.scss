@@ -1,28 +1,45 @@
 // Intro
 .intro {
 	display: flex;
-	margin-top: $xl-space !important;
-	padding: $section-space 0;
+	padding: $section-space-mobile 0;
 	position: relative;
-	max-width: 800px;
+	width: 80%;
+
+	@media (min-width: $medium) {
+		margin-top: $xl-space !important;
+		padding: $section-space 0 0 0;
+		max-width: 800px;
+	}
 	
 	&::before {
 		content: 'Hello';
 		font-family: Playfair Display;
+		font-size: 200px;
 		font-weight: 900;
 		font-style: italic;
-		font-size: 400px;
 		position: absolute;
 		opacity: 20%;
-		left: -20vw;
-		top: -50%;
+		left: -10vw;
+		top: -25%;
 		z-index: -1;
+		display: none;
+
+		@media (min-width: $medium) {
+			display: block;
+			font-size: 400px;
+			left: -20vw;
+			top: -50%;
+		}
 	}
 	
 	.intro-container {
 		border: 3px solid $dark-brown;
-		padding: $section-space;
+		padding: $small-space;
 		text-align: center;
+
+		@media (min-width: $medium) {
+			padding: $section-space;
+		}
 	}
 
 	.intro-paragraph {

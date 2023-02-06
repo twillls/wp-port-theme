@@ -1,6 +1,6 @@
 <div class="projects-container container-xxl">
     <div class="row first-row">
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -9,7 +9,7 @@
             </div>
             </a>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -18,7 +18,7 @@
             </div>
             </a>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -27,7 +27,7 @@
             </div>
             </a>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="row second-row">
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -47,7 +47,7 @@
             </div>
             </a>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -56,7 +56,7 @@
             </div>
             </a>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>
@@ -65,7 +65,7 @@
             </div>
             </a>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-3">
+        <div class="col col-12 col-sm-12 col-lg-3">
             <div class="project-image">
                 <div class="overlay"></div>
             </div>

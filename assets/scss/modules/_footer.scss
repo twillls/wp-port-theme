@@ -1,5 +1,9 @@
 .footer {
-    padding-bottom: $section-space;
+    padding: $section-space-mobile 0;
+
+    @media (min-width: $medium) {
+        padding: $section-space;
+    }
     
     .list-group {
         flex-direction: row;

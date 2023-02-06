@@ -1,9 +1,20 @@
-$xl-space: 150px;
-$section-space: 96px;
-
+// Colours
 $dark-brown: #4d473e;
 $light-brown: #f8ebd5;
 
+// Breakpoints
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1400px;
+
+// Spacing
+$small-space: 32px;
+$section-space-mobile: 60px;
+$section-space: 96px;
+$xl-space: 150px;
+
+// Fonts
 @font-face {
     font-family: "JetBrains";
     src: url("./fonts/JetBrainsMono-Light.ttf") format('ttf');
@@ -18,6 +29,7 @@ $primary-font: JetBrains, monospace;
 $primary-bold: JetBrains Medium, monospace;
 $heading-font: Playfair Display, serif;
 
+// Set Global Variables
 h1, h2,  h3, h4, h5, h6 {
     @include primaryTitle;
 }
@@ -36,5 +48,5 @@ body, p, span, a, label, input, button {
 }
 
 a:hover {
-    color: $dark-brown;
+    color: $dark-brown !important;
 }

@@ -1,5 +1,7 @@
 .projects-container {
-    margin: $xl-space 0;
+    @media (min-width: $medium) {
+        margin: $xl-space 0;
+    }
 
     .col {
         position: relative;
@@ -63,7 +65,7 @@
 
             .project-link,
             .title {
-                color: $light-brown !important;
+                color: $light-brown;
             }
         }
     }
@@ -72,20 +74,48 @@
         .col:nth-child(odd) {
             .project-image {
                 .overlay {
-                    background-color: $dark-brown;
+                    background-color: $light-brown;
                 }
             }
 
             .project-link,
             .title {
-                color: $light-brown !important;
+                color: $dark-brown;
             }
         }
 
         .col:nth-child(even) {
             .project-image {
                 .overlay {
-                    background-color: $light-brown;
+                    background-color: $dark-brown;
+                }
+            }
+
+            .project-link,
+            .title {
+                color: $light-brown;
+            }
+        }
+
+        @media (min-width: $large) {
+            .col:nth-child(odd) {
+                .project-image {
+                    .overlay {
+                        background-color: $dark-brown;
+                    }
+                }
+    
+                .project-link,
+                .title {
+                    color: $light-brown;
+                }
+            }
+    
+            .col:nth-child(even) {
+                .project-image {
+                    .overlay {
+                        background-color: $light-brown;
+                    }
                 }
             }
         }

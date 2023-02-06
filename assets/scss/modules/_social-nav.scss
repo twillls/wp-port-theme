@@ -1,20 +1,41 @@
 .header {
-    position: sticky;
+    position: fixed;
     width: fit-content;
-    height: 100%;
     z-index: 2;
     right: 20px;
-    top: 10px;
+    top: $section-space-mobile;
     float: right;
     vertical-align: middle;
 
+    @media (min-width: $medium) {
+        top: $section-space;
+    }
+
     .navbar {
         flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar-toggler {
+        background-color: $light-brown;
+        border: 1px solid $light-brown;
+        padding: .75rem 1.25rem;
+
+        &:hover,
+        &:focus {
+            background: $dark-brown;
+            outline: none;
+
+            i {
+                color: $light-brown;
+            }
+        }
     }
 
     .navbar-collapse {
         position: absolute;
-        top: 50px
+        top: 50px;
+        width: 100%;
     }
 }
 
@@ -22,7 +43,16 @@
     .list-group-item {
         border: none;
         border-radius: 0;
+        text-align: center;
         background-color: $light-brown;
+
+        &:first-child {
+            border-radius: .25rem .25rem 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 .25rem .25rem;
+        }
 
         &:hover,
         &:focus {

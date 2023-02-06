@@ -1,5 +1,11 @@
 // Form
 div.wpforms-container-full {
+	margin: $section-space-mobile 0;
+
+	@media (min-width: $medium){
+		margin: 0;
+	}
+
 	.wpforms-form {
 		.wpforms-title {
 			@include primaryTitle;
@@ -10,13 +16,15 @@ div.wpforms-container-full {
 
 		.wpforms-field-container {
 			.wpforms-field {
+				display: flex;
+				flex-direction: column-reverse;
 				position: relative;
-				padding: 20px 0;
+				padding: 10px 0;
 			}
 
 			.wpforms-field-label {
-				position: absolute;
-				bottom: -20px;
+				margin-top: 10px;
+				margin-bottom: 0;
 			}
 
 			input[type=text],
