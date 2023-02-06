@@ -220,11 +220,25 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
 .projects-container .first-row .col:nth-child(odd) .project-image .overlay {
   background-color: #f8ebd5;
 }
+.projects-container .first-row .col:nth-child(odd) .project-link,
+.projects-container .first-row .col:nth-child(odd) .title {
+  color: #4d473e;
+}
+.projects-container .first-row .col:nth-child(odd) .project-link:hover, .projects-container .first-row .col:nth-child(odd) .project-link:focus,
+.projects-container .first-row .col:nth-child(odd) .title:hover,
+.projects-container .first-row .col:nth-child(odd) .title:focus {
+  color: #4d473e;
+}
 .projects-container .first-row .col:nth-child(even) .project-image .overlay {
   background-color: #4d473e;
 }
 .projects-container .first-row .col:nth-child(even) .project-link,
 .projects-container .first-row .col:nth-child(even) .title {
+  color: #f8ebd5;
+}
+.projects-container .first-row .col:nth-child(even) .project-link:hover, .projects-container .first-row .col:nth-child(even) .project-link:focus,
+.projects-container .first-row .col:nth-child(even) .title:hover,
+.projects-container .first-row .col:nth-child(even) .title:focus {
   color: #f8ebd5;
 }
 .projects-container .second-row .col:nth-child(odd) .project-image .overlay {
@@ -234,11 +248,21 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
 .projects-container .second-row .col:nth-child(odd) .title {
   color: #4d473e;
 }
+.projects-container .second-row .col:nth-child(odd) .project-link:hover, .projects-container .second-row .col:nth-child(odd) .project-link:focus,
+.projects-container .second-row .col:nth-child(odd) .title:hover,
+.projects-container .second-row .col:nth-child(odd) .title:focus {
+  color: #4d473e;
+}
 .projects-container .second-row .col:nth-child(even) .project-image .overlay {
   background-color: #4d473e;
 }
 .projects-container .second-row .col:nth-child(even) .project-link,
 .projects-container .second-row .col:nth-child(even) .title {
+  color: #f8ebd5;
+}
+.projects-container .second-row .col:nth-child(even) .project-link:hover, .projects-container .second-row .col:nth-child(even) .project-link:focus,
+.projects-container .second-row .col:nth-child(even) .title:hover,
+.projects-container .second-row .col:nth-child(even) .title:focus {
   color: #f8ebd5;
 }
 @media (min-width: 992px) {
@@ -247,6 +271,11 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
   }
   .projects-container .second-row .col:nth-child(odd) .project-link,
   .projects-container .second-row .col:nth-child(odd) .title {
+    color: #f8ebd5;
+  }
+  .projects-container .second-row .col:nth-child(odd) .project-link:hover, .projects-container .second-row .col:nth-child(odd) .project-link:focus,
+  .projects-container .second-row .col:nth-child(odd) .title:hover,
+  .projects-container .second-row .col:nth-child(odd) .title:focus {
     color: #f8ebd5;
   }
   .projects-container .second-row .col:nth-child(even) .project-image .overlay {
@@ -361,10 +390,6 @@ body, p, span, a, label, input, button {
   font-family: JetBrains, monospace !important;
   font-weight: 300;
   color: #4d473e;
-}
-
-a:hover, a:focus {
-  color: #4d473e !important;
 }
 
 /*# sourceMappingURL=main.css.map */

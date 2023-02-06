@@ -40,10 +40,3 @@ body {
 body, p, span, a, label, input, button {
     @include baseFont;
 }
-
-a {
-    &:hover,
-    &:focus {
-        color: $dark-brown !important;
-    }
-}
