@@ -6,39 +6,6 @@
   font-family: "JetBrains Medium";
   src: url("./fonts/JetBrainsMono-Medium.ttf") format("ttf");
 }
-h1, h2, h3, h4, h5, h6 {
-  font-size: 48px !important;
-  font-family: Playfair Display, serif !important;
-  font-weight: 900 !important;
-  font-style: italic;
-  color: #4d473e;
-}
-@media (min-width: 768px) {
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 96px !important;
-  }
-}
-
-strong {
-  font-family: JetBrains Medium, monospace;
-  font-weight: 600;
-}
-
-body {
-  background-color: #f8ebd5;
-}
-
-body, p, span, a, label, input, button {
-  font-size: 16px;
-  font-family: JetBrains, monospace !important;
-  font-weight: 300;
-  color: #4d473e;
-}
-
-a:hover {
-  color: #4d473e !important;
-}
-
 div.wpforms-container-full {
   margin: 60px 0;
 }
