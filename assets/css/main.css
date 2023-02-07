@@ -185,17 +185,29 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
   position: relative;
   height: fit-content;
 }
+.projects-container .col:hover img, .projects-container .col:focus img {
+  transform: scale(1.5);
+}
 .projects-container .col .project-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/placeholder.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+}
+.projects-container .col .project-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.25s ease-in-out;
 }
 .projects-container .col .project-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 80%;
@@ -347,6 +359,9 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
 .social-list .list-group-item:hover i, .social-list .list-group-item:focus i {
   transform: scale(1.5);
 }
+.social-list .list-group-item i {
+  transition: transform 0.25s ease-in-out;
+}
 
 .footer {
   padding: 60px 0;
@@ -408,8 +423,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #f8ebd5;
-  border-radius: 20px;
-  box-shadow: inset 0 0 7px #4d473e;
+  border: 3px solid #4d473e;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -64,5 +64,9 @@
                 @include scaleUp();
             }
         }
+
+        i {
+            transition: transform .25s ease-in-out;
+        }
     }
 }

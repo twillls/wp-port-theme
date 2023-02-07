@@ -49,7 +49,6 @@ body {
 
     &::-webkit-scrollbar-thumb {
         background-color: $light-brown;
-        border-radius: 20px;
-        box-shadow: inset 0 0 7px $dark-brown;
+        border: 3px solid $dark-brown;
     }
 }
