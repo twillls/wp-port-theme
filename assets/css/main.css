@@ -48,6 +48,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-container textarea {
   border-right: none;
   border-color: #4d473e;
   border-radius: 0;
+  border-width: 3px;
 }
 div.wpforms-container-full .wpforms-form .wpforms-submit-container {
   margin-top: 24px;
@@ -59,14 +60,14 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
   color: #f8ebd5;
   text-decoration: none;
   background-color: #4d473e;
-  border: 1px solid #4d473e;
+  border: 3px solid #4d473e;
 }
 div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:hover, div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:focus {
   color: #4d473e;
   background-color: #f8ebd5;
 }
 div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:hover, div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:focus {
-  border: 1px solid #4d473e;
+  border: 3px solid #4d473e;
 }
 
 .page-title {
@@ -120,7 +121,7 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
   color: #f8ebd5;
   text-decoration: none;
   background-color: #4d473e;
-  border: 1px solid #4d473e;
+  border: 3px solid #4d473e;
 }
 .page-title .contact-button:hover, .page-title .contact-button:focus {
   color: #4d473e;
@@ -399,6 +400,16 @@ body, p, span, a, label, input, button {
   font-family: JetBrains, monospace !important;
   font-weight: 300;
   color: #4d473e;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+  background-color: #4d473e;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #f8ebd5;
+  border-radius: 20px;
+  box-shadow: inset 0 0 7px #4d473e;
 }
 
 /*# sourceMappingURL=main.css.map */

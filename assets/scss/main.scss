@@ -40,3 +40,16 @@ body {
 body, p, span, a, label, input, button {
     @include baseFont;
 }
+
+body {
+    &::-webkit-scrollbar {
+        width: 20px;
+        background-color: $dark-brown;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $light-brown;
+        border-radius: 20px;
+        box-shadow: inset 0 0 7px $dark-brown;
+    }
+}

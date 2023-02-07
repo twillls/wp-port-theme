@@ -24,12 +24,12 @@
 	color: $light-brown;
 	text-decoration: none;
 	background-color: $dark-brown;
-	border: 1px solid $dark-brown;
+	border: 3px solid $dark-brown;
 
 	&:hover,
 	&:focus {
 		color: $dark-brown;
-		background-color: $light-brown;
+		background-color: $light-brown;		
 	}
 }
 
@@ -38,7 +38,7 @@
 
 	&:hover,
 	&:focus {
-		border: 1px solid $dark-brown;
+		border: 3px solid $dark-brown;
 	}
 }
 
