@@ -5,7 +5,7 @@
 
     .col {
         position: relative;
-        height: fit-content;
+        height: auto;
         
         &:hover,
         &:focus {
@@ -28,8 +28,13 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: auto;
                 transition: transform .25s ease-in-out;
+
+                @media (min-width: $large) {
+                    width: auto;
+                    height: 100%;
+                }
             }
 
             .overlay {
@@ -49,7 +54,7 @@
             .project-link {
                 height: 100%;
                 width: 100%;
-                padding: 96px;
+                padding: 96px 0;
                 display: block;
                 text-align: center;
             }
@@ -65,116 +70,38 @@
         }
     }
 
-    .first-row {
-        .col:nth-child(odd) {
-            .project-image {
-                .overlay {
-                    background-color: $light-brown;
-                }
-            }
-
-            .project-link,
-            .title {
-                color: $dark-brown;
-
-                &:hover,
-                &:focus {
-                    color: $dark-brown;
-                }
+    .col:nth-child(odd) {
+        .project-image {
+            .overlay {
+                background-color: $light-brown;
             }
         }
 
-        .col:nth-child(even) {
-            .project-image {
-                .overlay {
-                    background-color: $dark-brown;
-                }
-            }
+        .project-link,
+        .title {
+            color: $dark-brown;
 
-            .project-link,
-            .title {
-                color: $light-brown;
-
-                &:hover,
-                &:focus {
-                    color: $light-brown;
-                }
+            &:hover,
+            &:focus {
+                color: $dark-brown;
             }
         }
     }
 
-    .second-row {
-        .col:nth-child(odd) {
-            .project-image {
-                .overlay {
-                    background-color: $light-brown;
-                }
-            }
-
-            .project-link,
-            .title {
-                color: $dark-brown;
-
-                &:hover,
-                &:focus {
-                    color: $dark-brown;
-                }
+    .col:nth-child(even) {
+        .project-image {
+            .overlay {
+                background-color: $dark-brown;
             }
         }
 
-        .col:nth-child(even) {
-            .project-image {
-                .overlay {
-                    background-color: $dark-brown;
-                }
-            }
+        .project-link,
+        .title {
+            color: $light-brown;
 
-            .project-link,
-            .title {
+            &:hover,
+            &:focus {
                 color: $light-brown;
-
-                &:hover,
-                &:focus {
-                    color: $light-brown;
-                }
-            }
-        }
-
-        @media (min-width: $large) {
-            .col:nth-child(odd) {
-                .project-image {
-                    .overlay {
-                        background-color: $dark-brown;
-                    }
-                }
-    
-                .project-link,
-                .title {
-                    color: $light-brown;
-
-                    &:hover,
-                    &:focus {
-                        color: $light-brown;
-                    }
-                }
-            }
-    
-            .col:nth-child(even) {
-                .project-image {
-                    .overlay {
-                        background-color: $light-brown;
-                    }
-                }
-
-                .project-link,
-                .title {
-                    color: $dark-brown;
-
-                    &:hover,
-                    &:focus {
-                        color: $dark-brown;
-                    }
-                }
             }
         }
     }

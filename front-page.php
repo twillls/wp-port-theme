@@ -5,7 +5,10 @@ get_header();
 <section class="intro container-sm">
 	<div class="intro-container">
 		<p class="intro-paragraph">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit doloremque et modi molestias reprehenderit porro dolore nisi quaerat, ea distinctio culpa? Est laudantium, aliquam modi vel harum ullam obcaecati.
+            Hello! It’s great to meet you. My name is Taylor. I am a 26 year old Developer that specializes in fully responsive,
+            custom frontend development.
+
+            When I'm not designing or coding cool sites, I like to spend time with my cats, curl up with a cup of joe and a good book, or find a new trail to hike.
 		</p>
 	</div>
 </section>
