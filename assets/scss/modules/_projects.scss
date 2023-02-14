@@ -31,9 +31,9 @@
                 height: auto;
                 transition: transform .25s ease-in-out;
 
-                @media (min-width: $large) {
-                    width: auto;
-                    height: 100%;
+                @media (min-width: $medium) {
+                    width: 100%;
+                    height: auto;
                 }
             }
 
@@ -54,9 +54,13 @@
             .project-link {
                 height: 100%;
                 width: 100%;
-                padding: 96px 0;
+                padding: 15vw 0;
                 display: block;
                 text-align: center;
+
+                @media (min-width: $medium) {
+                    padding: 15vw 0;
+                }
             }
 
             .title {
@@ -102,6 +106,44 @@
             &:hover,
             &:focus {
                 color: $light-brown;
+            }
+        }
+    }
+
+    @media (min-width: $medium) {
+        .col:nth-child(3) {
+            .project-image {
+                .overlay {
+                    background-color: $dark-brown;
+                }
+            }
+    
+            .project-link,
+            .title {
+                color: $light-brown;
+    
+                &:hover,
+                &:focus {
+                    color: $light-brown;
+                }
+            }
+        }
+
+        .col:nth-child(4) {
+            .project-image {
+                .overlay {
+                    background-color: $light-brown;
+                }
+            }
+    
+            .project-link,
+            .title {
+                color: $dark-brown;
+    
+                &:hover,
+                &:focus {
+                    color: $dark-brown;
+                }
             }
         }
     }

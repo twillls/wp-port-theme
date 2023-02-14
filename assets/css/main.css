@@ -204,10 +204,10 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
   height: auto;
   transition: transform 0.25s ease-in-out;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .projects-container .col .project-image img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 .projects-container .col .project-image .overlay {
@@ -224,9 +224,14 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
 .projects-container .col .project-link-wrapper .project-link {
   height: 100%;
   width: 100%;
-  padding: 96px 0;
+  padding: 15vw 0;
   display: block;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .projects-container .col .project-link-wrapper .project-link {
+    padding: 15vw 0;
+  }
 }
 .projects-container .col .project-link-wrapper .title {
   font-family: Playfair Display, serif !important;
@@ -259,6 +264,32 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=s
 .projects-container .col:nth-child(even) .title:hover,
 .projects-container .col:nth-child(even) .title:focus {
   color: #f8ebd5;
+}
+@media (min-width: 768px) {
+  .projects-container .col:nth-child(3) .project-image .overlay {
+    background-color: #4d473e;
+  }
+  .projects-container .col:nth-child(3) .project-link,
+  .projects-container .col:nth-child(3) .title {
+    color: #f8ebd5;
+  }
+  .projects-container .col:nth-child(3) .project-link:hover, .projects-container .col:nth-child(3) .project-link:focus,
+  .projects-container .col:nth-child(3) .title:hover,
+  .projects-container .col:nth-child(3) .title:focus {
+    color: #f8ebd5;
+  }
+  .projects-container .col:nth-child(4) .project-image .overlay {
+    background-color: #f8ebd5;
+  }
+  .projects-container .col:nth-child(4) .project-link,
+  .projects-container .col:nth-child(4) .title {
+    color: #4d473e;
+  }
+  .projects-container .col:nth-child(4) .project-link:hover, .projects-container .col:nth-child(4) .project-link:focus,
+  .projects-container .col:nth-child(4) .title:hover,
+  .projects-container .col:nth-child(4) .title:focus {
+    color: #4d473e;
+  }
 }
 
 .header {
